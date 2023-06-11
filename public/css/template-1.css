@@ -8,6 +8,11 @@ max-width: 960px;
 margin: 0 auto;
 }
 
+.header {
+    padding: 24px;
+    border-bottom: 1px solid #dee2e6;
+}
+
 .logo {
     font-size: 17px;
 }
@@ -56,7 +61,8 @@ margin: 0 auto;
 }
 
 .footer{
-    padding: 24px 0;    
+    padding: 24px 0;
+    border-top: 1px solid #dee2e6;   
 }
 .footercopy {
     font-size: 14px;
@@ -83,9 +89,13 @@ margin: 0 auto;
 .hero_text {
     font-size: 20px;
     color:#212529;
-    max-width: 585px;
+    width: 200px;
     margin: 0 auto;
     text-align: center;
+    overflow: auto;
+    resize:both;
+
+   
 }
 
 .plans_card:not(:last-of-type){
@@ -114,6 +124,7 @@ margin: 0 auto;
 .card_price_duration {
     font-size: 29px;
     color: #6c757d;
+    vertical-align: 40%;
 }
 
 .card_block {
@@ -140,4 +151,41 @@ margin: 0 auto;
     width: 100%;
     font-size: 19px;
     padding: 9px;
+}
+
+.card {
+    border: 2px ridge blue;
+    border-radius: 10px 30px;
+    box-shadow: 5px 5px 10px 1px rgb(116, 108, 108);
+    
+}
+
+.card:hover {
+    
+    outline: 2px ridge blue;
+    outline-offset: 5px;
+}
+
+.btn {
+    border-radius: 20px;
+}
+
+.btn:hover {
+   cursor: grab;
+}
+
+h1 {
+    text-shadow: 15px 15px 10px #6c757d;
+}
+
+.plans_card:nth-child(2){
+    visibility: hidden;
+}
+
+p {
+    background: gray;
+    width: 200px;
+    height: 100px;
+    /* overflow: overlay; */
+    text-overflow: ellipsis;
 }
