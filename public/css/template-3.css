@@ -1,3 +1,5 @@
+@import '/css/var.css';
+
 @font-face {
     font-family: 'Segment';
     src: url('/font/Segment-Regular.oft');
@@ -53,28 +55,7 @@
 }
 
 
-:root {
-    --space-m: 12px;
-    --space-xm: 16px;
-    --space-l: 24px;
-    --space-b: 36px;
-    --size-s: 14px;
-    --size-d: 16px;
-    --size-l: 20px;
 
-    --color-border: #dee2e6; 
-    --color-primary: rgb(46,46,255);
-    --border-radius: 12px;
-    --color-title: #212529;
-    --color-text: #343a40;
-    --weight-title: 500;
-    --weight-text: 400;
-    --page-width:960px;
-
-    
-
-
-}
 
 
 /* ================================= */
@@ -478,4 +459,25 @@ body:hover .modal {
     .hero {
         flex-direction: column;
     }
+}
+
+.ex {
+    font-size: 1ex;
+}
+
+.test {
+    position: absolute;
+    background: red;
+    top: 0;
+    left: 0;
+    /* height: 100vh;
+    width: 100vw; */
+
+    height: 100vmin;
+    width: 100vmin;
+    z-index: 9999;
+}
+
+.hero_title {
+    font-size: 5cqw;
 }
